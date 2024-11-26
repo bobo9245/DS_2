@@ -1,0 +1,36 @@
+a) 사용자 정보:
+   - User (int64): 사용자 고유 식별자 - 그대로 사용
+   - Gender (int64): 성별 - 그대로 사용
+   - Current Age (int64): 현재 나이 - 그대로 사용
+   - Retirement Age (int64): 은퇴 나이 - 그대로 사용
+   - Birth Year (int64): 출생 연도 - 최소값 빼서 그대로 사용
+   - Birth Month (int64): 출생 월 - 그대로 사용
+   - Zipcode (float64): 행정 구역 우편번호 - 100단위로 그룹화해서 라벨인코딩
+   - Per Capita Income - Zipcode (float64): 우편번호 행정 구역 기준 1인당 소득 - 그대로 사용
+   - Yearly Income (float64): 연간 소득 - 그대로 사용
+   - Total Debt (float64): 총 부채 - 그대로 사용
+   - Credit Score (int64): 신용 점수 - 그대로 사용
+
+b) 카드 정보:
+   - Card (int64): 카드 식별자 - 그대로 사용
+   - Card Brand (object): 카드 브랜드 - 라벨인코딩
+   - Card Type (object): 카드 유형 - 라벨인코딩
+   - Card Number (float64): 카드 번호 - 라벨인코딩
+   - Expires (object): 카드 만료일 - 라벨인코딩
+   - Has Chip (bool): 보안 칩 탑재 여부 - 그대로 사용
+   - Credit Limit (int64): 신용 한도 - ?
+   - Acct Open Date (object): 계좌 개설일 - 라벨인코딩
+   - Year PIN Last Changed (int64): 보안 비밀번호 마지막 변경 연도 - 라벨인코딩
+
+c) 거래 정보:
+   - Year (int64): 거래 연도 - 그대로
+   - Month (int64): 거래 월 - 그대로
+   - Day (int64): 거래 일 - 그대로
+   - Amount (float64): 거래 금액 - 그대로
+   - Merchandise Code (int64): 상품 코드 - 카테고리 나눠서 라벨인코딩
+
+d) 보안 및 사기 관련:
+   - Whether Security Chip is Used (int64): 보안 칩 사용 여부 - 그대로 사용
+   - Error Message (object): 오류 메시지 - 그대로 사용
+   - Is Fraud? (object): 사기 여부 (정답) - 라벨인코딩(0 or 1)
+      

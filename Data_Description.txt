@@ -1,0 +1,46 @@
+1. 데이터 개요:
+   이 데이터셋은 카드 거래 정보와 사용자 정보를 포함하며, 사기 탐지를 위한 머신러닝 프로젝트에 활용 되기 위해 익명화 되었습니다.
+
+
+2. 데이터 구조:
+   총 30개의 컬럼으로 구성되어 있으며, 사용자 정보, 카드 정보, 거래 정보 등을 포함합니다.
+
+
+3. 주요 특성 설명:
+
+   a) 사용자 정보:
+      - User (int64): 사용자 고유 식별자
+      - Gender (int64): 성별
+      - Current Age (int64): 현재 나이
+      - Retirement Age (int64): 은퇴 나이
+      - Birth Year (int64): 출생 연도
+      - Birth Month (int64): 출생 월
+      - Zipcode (float64): 행정 구역 우편번호
+      - Per Capita Income - Zipcode (float64): 우편번호 행정 구역 기준 1인당 소득
+      - Yearly Income (float64): 연간 소득
+      - Total Debt (float64): 총 부채
+      - Credit Score (int64): 신용 점수
+
+   b) 카드 정보:
+      - Card (int64): 카드 식별자
+      - Card Brand (object): 카드 브랜드
+      - Card Type (object): 카드 유형
+      - Card Number (float64): 카드 번호
+      - Expires (object): 카드 만료일
+      - Has Chip (bool): 보안 칩 탑재 여부
+      - Credit Limit (int64): 신용 한도
+      - Acct Open Date (object): 계좌 개설일
+      - Year PIN Last Changed (int64): 보안 비밀번호 마지막 변경 연도
+
+   c) 거래 정보:
+      - Year (int64): 거래 연도
+      - Month (int64): 거래 월
+      - Day (int64): 거래 일
+      - Amount (float64): 거래 금액
+      - Merchandise Code (int64): 상품 코드
+
+   d) 보안 및 사기 관련:
+      - Whether Security Chip is Used (int64): 보안 칩 사용 여부
+      - Error Message (object): 오류 메시지
+      - Is Fraud? (object): 사기 여부 (정답)
+      
