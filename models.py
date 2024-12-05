@@ -23,7 +23,7 @@ class BaseModel(nn.Module):
             nn.ReLU(),
             nn.Linear(64, 64),
         )
-        self.classifier = nn.Sequential(nn.Linear(32, 32),
+        self.classifier = nn.Sequential(nn.Linear(encoding_dim, 32),
                                         nn.ReLU(),
                                         nn.Linear(32, 16),
                                         nn.ReLU(),
